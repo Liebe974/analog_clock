@@ -96,6 +96,24 @@ img {
     }
   }
 }
+#number {
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  & + span#value {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
+
 
 .btn {
   display: flex;

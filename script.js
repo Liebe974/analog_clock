@@ -25,7 +25,7 @@ function displayCountries() {
     <img src="${country.flags.png}" alt="${country.name.common}">
     </div>
     <div class="country-info">
-    <h2 class="country-name">${country.translations.fra.official}</h2>
+    <h2 class="country-name">${country.translations.fra.common}</h2>
     <h3 class="country-capital">Capital: ${country.capital}</h3>
     <h3 class="country-population">Population: ${country.population}</h3>
     </div>
@@ -37,17 +37,16 @@ searchBox.addEventListener("input", (e) => {
   const value = e.target.value;
   container.innerHTML = "";
   countries.forEach((country) => {
-    if (country.translations.fra.official.toLowerCase().includes(value.toLowerCase())) {
+    if (country.translations.fra.common.toLowerCase().includes(value.toLowerCase())) {
       container.innerHTML += ` 
       <div class="country">
       <div class="flag">
       <img src="${country.flags.png}" alt="${country.name.common}">
       </div>
       <div class="country-info">
-      <h2 class="country-name">${country.translations.fra.official}</h2>
-      <h3 class="country-population">Population: ${country.population}</h3>
-      <h3 class="country-region">Region: ${country.region}</h3>
+      <h2 class="country-name">${country.translations.fra.common}</h2>
       <h3 class="country-capital">Capital: ${country.capital}</h3>
+      <h3 class="country-population">Population: ${country.population}</h3
       </div>
       `;
   }
@@ -66,10 +65,9 @@ inputRange.addEventListener("input", (e) => {
     <img src="${country.flags.png}" alt="${country.name.common}">
     </div>
     <div class="country-info">
-    <h2 class="country-name">${country.translations.fra.official}</h2>
-    <h3 class="country-population">Population: ${country.population}</h3>
-    <h3 class="country-region">Region: ${country.region}</h3>
+    <h2 class="country-name">${country.translations.fra.common}</h2>
     <h3 class="country-capital">Capital: ${country.capital}</h3>
+    <h3 class="country-population">Population: ${country.population}</h
     `;
   });
 })
@@ -89,10 +87,9 @@ btns.forEach((btn) => {
         <img src="${country.flags.png}" alt="${country.name.common}">
         </div>
         <div class="country-info">
-        <h2 class="country-name">${country.translations.fra.official}</h2>
-        <h3 class="country-population">Population: ${country.population}</h3>
-        <h3 class="country-region">Region: ${country.region}</h3>
+        <h2 class="country-name">${country.translations.fra.common}</h2>
         <h3 class="country-capital">Capital: ${country.capital}</h3>
+        <h3 class="country-population">Population: ${country.population}</h3>
         `;
       });
     } else if (value === "Décroissant") {
@@ -107,10 +104,9 @@ btns.forEach((btn) => {
         <img src="${country.flags.png}" alt="${country.name.common}">
         </div>
         <div class="country-info">
-        <h2 class="country-name">${country.translations.fra.official}</h2>
-        <h3 class="country-population">Population: ${country.population}</h3>
-        <h3 class="country-region">Region: ${country.region}</h3>
+        <h2 class="country-name">${country.translations.fra.common}</h2>
         <h3 class="country-capital">Capital: ${country.capital}</h3>
+        <h3 class="country-population">Population: ${country.population}</h3>
         `;
       });
     } else if (value === "Alphabétique") {
@@ -125,10 +121,9 @@ btns.forEach((btn) => {
         <img src="${country.flags.png}" alt="${country.name.common}">
         </div>
         <div class="country-info">
-        <h2 class="country-name">${country.translations.fra.official}</h2>
-        <h3 class="country-population">Population: ${country.population}</h3>
-        <h3 class="country-region">Region: ${country.region}</h3>
+        <h2 class="country-name">${country.translations.fra.common}</h2>
         <h3 class="country-capital">Capital: ${country.capital}</h3>
+        <h3 class="country-population">Population: ${country.population}</h3>
         `;
       });
     }
