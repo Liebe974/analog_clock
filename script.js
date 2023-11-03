@@ -8,7 +8,7 @@ let countries = [];
 async function fetchCountries() {
   try {
     const response = await fetch("https://restcountries.com/v3.1/all");
-    data = await response.json();
+    countries = await response.json();
     displayCountries();
   } catch (error) {
     console.log(error);
@@ -18,7 +18,7 @@ async function fetchCountries() {
 
 function displayCountries() {
   countries = data;
-  countries.forEach((country) => {
+  countries.map((country) => {
     container.innerHTML += ` 
     <div class="country">
     <div class="flag">
